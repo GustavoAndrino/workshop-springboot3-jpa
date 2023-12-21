@@ -27,5 +27,9 @@ public class UserService {
 	public List<User> findByNameContains(String name){
 		return repository.findByNameContains(name);
 	}
+	
+	public User insert(User obj) {
+		return repository.save(obj);
+	}
 
 }
